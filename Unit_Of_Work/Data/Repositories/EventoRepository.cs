@@ -15,12 +15,12 @@ public class EventoRepository : IEventoRepository
     {
         var evento = await _context.Eventos.FindAsync(id);
 
-        if(evento == null)
+        if (evento == null)
         {
             throw new Exception("Evento não encontrado");
         }
 
-        if(evento.QtdAtual == evento.QtdMax)
+        if (evento.QtdAtual == evento.QtdMax)
         {
             throw new Exception("não é possivel adicionar uma nova pessoa no evento");
         }
@@ -28,7 +28,6 @@ public class EventoRepository : IEventoRepository
         evento.QtdAtual += 1;
 
         _context.Eventos.Update(evento);
-        
-        await _context.SaveChangesAsync();
+
     }
 }

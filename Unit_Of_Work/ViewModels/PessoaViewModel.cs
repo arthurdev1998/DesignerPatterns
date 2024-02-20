@@ -8,10 +8,13 @@ namespace Unit_Of_Work.ViewModels
 {
     public class PessoaViewModel
     {
+
+        public long Id { get; set; }
+
         [MaxLength(100)]
         public string? Nome { get; set; }
 
         [Range(1, long.MaxValue)]
-        public long EventoId { get; set; } 
+        public long EventoId { get; set; }
     }
 }
