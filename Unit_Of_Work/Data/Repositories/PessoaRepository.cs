@@ -12,7 +12,7 @@ public class PessoaRepository : IPessoaRepository
         _context = context;
     }
 
-    public async Task<Pessoa> AdicionarPessoa(Pessoa pessoa)
+    public async Task AdicionarPessoa(Pessoa pessoa)
     {
         await _context.Pessoas.AddAsync(pessoa);
     }
