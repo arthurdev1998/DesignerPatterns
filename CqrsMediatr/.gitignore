@@ -381,7 +381,6 @@ FodyWeavers.xsd
 .vscode/settings.json
 .vscode/tasks.json
 .vscode/launch.json
-.vscode/launchSettings.json
 .vscode/extensions.json
 *.code-workspace
 
@@ -399,7 +398,3 @@ FodyWeavers.xsd
 *.sln.iml
 *.json
 *.http
-
-
-*.csproj
-*.json
